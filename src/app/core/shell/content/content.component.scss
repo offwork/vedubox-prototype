@@ -1,0 +1,14 @@
+.content-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding: 64px 0;
+  margin: -64px 0;
+  background-color: #f1f1f1;
+
+  & .content {
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+  }
+}

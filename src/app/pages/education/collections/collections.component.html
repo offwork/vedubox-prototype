@@ -1,0 +1,19 @@
+<div fxLayout="row" fxLayoutAlign="space-between start" fxFlex>
+  <div class="page-title">
+    <h2 class="mat-h2">Egitimlerim</h2>
+    <p class="mat-body">Egitim iligili her seye buradan ulasabilirsin.</p>
+  </div>
+  <span class="mat-caption">Anasayfa/Egitimlerim</span>
+</div>
+<mat-grid-list cols="4" rowHeight="140px" gutterSize="16px">
+  <mat-grid-tile
+    class="mat-elevation-z6"
+    *ngFor="let tile of tiles"
+    [colspan]="tile.cols"
+    [rowspan]="tile.rows"
+    [style.background]="tile.color"
+    [style.color]="tile.textColor"
+  >
+    {{ tile.text }}
+  </mat-grid-tile>
+</mat-grid-list>

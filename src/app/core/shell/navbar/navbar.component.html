@@ -1,0 +1,47 @@
+<mat-toolbar class="navbar">
+  <!--<span class="bar-spacer"></span>-->
+  <div fxLayout="row" fxLayoutAlign="space-between center" fxFlex="noshrink">
+    <button mat-icon-button color="primary" (click)="toggled.emit()">
+      <mat-icon aria-label="menu icon">menu</mat-icon>
+    </button>
+    <div>
+      <button mat-icon-button color="primary">
+        <mat-icon aria-label="search icon">search</mat-icon>
+      </button>
+      <button mat-icon-button color="primary">
+        <mat-icon aria-label="mail icon">mail_outline</mat-icon>
+      </button>
+      <button mat-icon-button color="primary">
+        <mat-icon aria-label="notifications icon">notifications_none</mat-icon>
+      </button>
+
+      <button
+        mat-button
+        class="menu-button-icon"
+        [matMenuTriggerFor]="menu"
+        color="primary"
+      >
+        <img
+          src="/assets/profile-photo.png"
+          alt="Profile Photo"
+          class="avatar"
+        />
+        Baris Y.<mat-icon>expand_more</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>person_outline</mat-icon>
+          <span>Profil</span>
+        </button>
+        <button mat-menu-item disabled>
+          <mat-icon>settings</mat-icon>
+          <span>Ayarlar</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>exit_to_app</mat-icon>
+          <span>Cikis Yap</span>
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+</mat-toolbar>

@@ -1,0 +1,19 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav class="sidenav" mode="side" opened>
+    <vedubox-side-header></vedubox-side-header>
+    <vedubox-main-navs></vedubox-main-navs>
+    <div class="support-button">
+      <a mat-icon-button [disableRipple]="true">
+        <mat-icon>contact_support</mat-icon>
+        Destesk & Yardim
+      </a>
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <vedubox-navbar (toggled)="sidenav.toggle()"></vedubox-navbar>
+    <vedubox-content></vedubox-content>
+    <vedubox-footer></vedubox-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>

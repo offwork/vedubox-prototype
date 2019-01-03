@@ -1,0 +1,19 @@
+<li
+  class="nav-items"
+  [ngClass]="{ active: toggle }"
+  (click)="toggled.emit(this);"
+>
+  <a mat-button>
+    <mat-icon aria-label="nav item icon">{{ icon }}</mat-icon>
+    <span>{{ label }}</span>
+    <mat-icon
+      class="expand-icon"
+      [ngClass]="{ rotated: toggle }"
+      aria-label="nav expand icon"
+      *ngIf="index === 2"
+    >
+      expand_more
+    </mat-icon>
+  </a>
+  <ng-container *ngTemplateOutlet="navSub"></ng-container>
+</li>

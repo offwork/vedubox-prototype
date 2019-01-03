@@ -1,0 +1,48 @@
+<!--
+<ul class="main-nav-menu">
+  <li
+    class="nav-menu"
+    #navItem
+    [ngClass]="{ active: nav === currentnav }"
+    *ngFor="let nav of navs; let i = index"
+    (click)="showSubmenu = i === 2; navClick($event)"
+  >
+    <a mat-icon-button [disableRipple]="true">
+      <mat-icon>{{ nav.icon }}</mat-icon>
+      {{ nav.name }}
+    </a>
+    <mat-icon
+      class="expand-icon"
+      [ngClass]="{ rotated: showSubmenu }"
+      *ngIf="nav.subnavs.length > 0"
+    >
+      expand_more
+    </mat-icon>
+    <div class="sub-menu" [ngClass]="{ expanded: showSubmenu }">
+      <a mat-icon-button [disableRipple]="true" *ngFor="let sub of nav.subnavs">
+        <mat-icon>{{ sub.icon }}</mat-icon>
+        {{ sub.name }}
+      </a>
+    </div>
+  </li>
+</ul>
+-->
+<ul class="main-navs">
+  <vedubox-nav-item
+    *ngFor="let nav of navs"
+    (toggled)="navItemClick($event)"
+    [toggle]="nav.toggle"
+    [link]="nav.path"
+    [index]="nav.index"
+    [icon]="nav.icon"
+    [label]="nav.label"
+  >
+    <ng-template #navSub>
+      <vedubox-sub-nav
+        class="nav-subitems"
+        [items]="nav.subnavs"
+        [display]="nav.toggle"
+      ></vedubox-sub-nav>
+    </ng-template>
+  </vedubox-nav-item>
+</ul>

@@ -1,0 +1,47 @@
+:host {
+  width: 917px;
+  display: block !important;
+}
+
+.page-title {
+  .mat-h2 {
+    margin: 0;
+  }
+}
+
+.page-wrapper {
+  .mat-card {
+    padding: 0;
+  }
+
+  .card-img-hx1 {
+    height: auto;
+    width: 296px;
+    object-fit: contain;
+  }
+  .card-img-hx2 {
+    height: auto;
+    width: 608px;
+    object-fit: contain;
+  }
+  .card-img-hx3 {
+    height: auto;
+    width: 608px;
+    object-fit: contain;
+  }
+  .card-img-hx4 {
+    height: auto;
+    width: 293px;
+    object-fit: contain;
+  }
+  .card-img-hx5 {
+    height: auto;
+    width: 551px;
+    object-fit: contain;
+  }
+  .card-img-hx6 {
+    height: auto;
+    width: 350px;
+    object-fit: contain;
+  }
+}

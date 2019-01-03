@@ -1,0 +1,27 @@
+.navbar {
+  position: relative;
+  background-color: #f1f1f1;
+  button {
+    font-size: small;
+    font-weight: lighter;
+  }
+}
+.menu-button-icon {
+  width: auto;
+  margin: 0 8px 0 44px;
+}
+.bar-spacer {
+  flex: 1 1 auto;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 38px;
+  margin-right: 8px;
+  margin-top: -4px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: solid #00bcd4 2px;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}

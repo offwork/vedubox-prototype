@@ -1,0 +1,23 @@
+mat-sidenav {
+  &.mat-drawer {
+    width: 225px;
+    color: white;
+    background: rgb(22, 87, 99);
+    background: linear-gradient(-180deg, #28b9b9 0%, #259292 60%, #297f7f 90%);
+  }
+
+  .support-button {
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    a {
+      color: white;
+      font-weight: lighter;
+      :first-child {
+        margin-right: 8px;
+      }
+    }
+  }
+}

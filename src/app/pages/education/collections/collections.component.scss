@@ -1,0 +1,22 @@
+:host {
+  width: 917px;
+  display: block !important;
+}
+
+.page-title {
+  text-align: left;
+  .mat-h2 {
+    margin: 0;
+  }
+  span {
+    text-align: right;
+  }
+}
+
+.page-wrapper {
+  width: 917px;
+  .mat-card {
+    width: 295px;
+    height: 140px;
+  }
+}
